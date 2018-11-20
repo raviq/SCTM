@@ -11,7 +11,7 @@ Simulator of road traffic in urban networks using Stochastic Cell Transmission M
 
 ## Usage
 
-run `./simulator`.
+Run `./simulator`.
 
 Output in `data/` and `test_data`.
 
