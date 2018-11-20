@@ -4,7 +4,6 @@ Simulator of road traffic in urban networks using Stochastic Cell Transmission M
 
 > Hadfi, Rafik, Sho Tokuda, and Takayuki Ito. "Traffic Simulation in Urban Networks Using Stochastic Cell Transmission Model." Computational Intelligence 33.4 (2017): 826-842.
 
-
 ## Prerequisites
 
 - g++
@@ -12,9 +11,9 @@ Simulator of road traffic in urban networks using Stochastic Cell Transmission M
 
 ## Usage
 
-run as ` bin/release/simulator `
+run `./simulator` in `bin/release/`.
 
-output in `data/` and `test_data`
+Output in `data/` and `test_data`
 
 ## License
 
@@ -27,4 +26,4 @@ Comments, feedback and ideas are welcome.
 If you find this project to be of any use, please let me know.
 If you find bugs or omissions in the code or documentation, please do not hesitate to submit an issue or open a pull request with a fix. Thank you.
 
-(c) 2016-2018 Rafik Hadfi, rafik.hadfi@gmail.com
+(c) 2016 Rafik Hadfi, rafik.hadfi@gmail.com

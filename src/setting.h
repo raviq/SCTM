@@ -1,9 +1,9 @@
 //
 //
-//
+
 // マジックナンバー
 #define REVISION true 	// 密度の更新式を改良する場合はtrue
-#define TEST false	 	// テストの場合はtrue
+#define TEST true	 	// テストの場合はtrue
 #define STEP 1        	// シミュレーション間隔時間
 #define NOISE_NUM 1000 	// ノイズの数
 #define RATIO 0.05    	// 不確実性の分散の範囲(%)
