@@ -1,4 +1,4 @@
-# SCTM
+# SCTM [<img alt="Build Status" src="https://travis-ci.org/raviq/Simultra.svg?branch=master">][travis-url] [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Simulator of road traffic in urban networks using Stochastic Cell Transmission Model (SCTM).
 
@@ -8,6 +8,7 @@ Simulator of road traffic in urban networks using Stochastic Cell Transmission M
 
 - g++
 - [Boost](https://www.boost.org/)
+- [Eigen](http://eigen.tuxfamily.org)
 - R (for data analysis)
 
 ## Usage
