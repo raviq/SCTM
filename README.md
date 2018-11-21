@@ -7,6 +7,7 @@ Simulator of road traffic in urban networks using Stochastic Cell Transmission M
 ## Prerequisites
 
 - g++
+- [Boost](https://www.boost.org/)
 - R (for data analysis)
 
 ## Usage
