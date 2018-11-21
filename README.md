@@ -13,7 +13,7 @@ Simulation of road traffic in urban networks using Stochastic Cell Transmission 
 
 ## Usage
 
-Run `./simulator`.
+Run `bin/release/simulator`.
 
 Output in `data/` and `test_data`.
 
