@@ -1,4 +1,4 @@
-# SCTM <img alt="Build Status" src="https://travis-ci.org/raviq/SCTM.svg?branch=master">[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# SCTM
 
 Simulation of road traffic in urban networks using Stochastic Cell Transmission Model (SCTM).
 
