@@ -1,6 +1,6 @@
 # SCTM <img alt="Build Status" src="https://travis-ci.org/raviq/SCTM.svg?branch=master">[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-Simulator of road traffic in urban networks using Stochastic Cell Transmission Model (SCTM).
+Simulation of road traffic in urban networks using Stochastic Cell Transmission Model (SCTM).
 
 > Hadfi, Rafik, Sho Tokuda, and Takayuki Ito. "Traffic Simulation in Urban Networks Using Stochastic Cell Transmission Model." Computational Intelligence 33.4 (2017): 826-842.
 
