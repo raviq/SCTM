@@ -17,7 +17,9 @@ Mode::Mode()
   Q = MatrixXd::Zero(2,2);
 }
 
-Mode::Mode(const Mode&){}
+Mode::Mode(const Mode&)
+{
+}
 
 Mode::~Mode()
 {

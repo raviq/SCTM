@@ -71,7 +71,8 @@ void Node::UpdateTime()
 }
 
 // 信号時間によって信号の色を変更
-void Node::changeSignal(){
+void Node::changeSignal()
+{
   for(int i = 0; i < adjacent_num; i++)
   {
         

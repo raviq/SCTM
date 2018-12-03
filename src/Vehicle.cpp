@@ -15,12 +15,10 @@ Vehicle::Vehicle(int i)
 
 Vehicle::Vehicle(const Vehicle& vehicle)
 {
-    
 }
 
 Vehicle::~Vehicle()
-{
-    
+{   
 }
 
 void Vehicle::PushPass(int pass)

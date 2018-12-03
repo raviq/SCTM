@@ -7,7 +7,8 @@ Cell::Cell(){
   predict_time = 0;
 }
 
-Cell::Cell(int c, int s){
+Cell::Cell(int c, int s)
+{
   number = c;
   subsystem_num = s;
   merge_num = 0;
@@ -30,15 +31,21 @@ void Cell::initCell(double length, double capacity, int dummy)
   density = 0.0;
   SD_density = 0.0;
 
-  if(TEST){
+  if(TEST)
+  {
     L = length; // mile
-  } else {
+  }
+else 
+  {
     L = length / 1000.0; // km
   }
 
-  if(dummy == 1){
+  if(dummy == 1)
+  {
     is_dummy = true;
-  } else {
+  }
+  else 
+  {
     is_dummy = false;
   }
 }
@@ -54,25 +61,32 @@ void Cell::SetParameter(double velocity, double wave_speed)
 }
 
 // 密度の更新
-void Cell::UpdateDensity(){  
+void Cell::UpdateDensity()
+{  
   density = n / L;
     
-  if(density > rhoJ){
+  if(density > rhoJ)
+  {
     density = rhoJ;
   }
 }
 
 // 最小待機時間を更新
-void Cell::UpdateWaitTime(){
+void Cell::UpdateWaitTime()
+{
   V = GreenShields(density, rhoJ, Vf);
   
   double mile = 1.0;
-  if(TEST){
+  if(TEST)
+  {
     mile = 1.61;  // 1mile = 1.61km
   }
-  if(V >= 1.0 * mile){  // 1km/h以上
+  if(V >= 1.0 * mile)
+  {  // 1km/h以上
     predict_time = (double)L / V;
-  } else {
+  }
+  else
+  {
     predict_time = (double)L / 1.0 * mile;
   }
 
@@ -85,21 +99,25 @@ void Cell::UpdateWaitTime(){
 }
 
 // グリーンシールズ・オルコットの方程式
-double Cell::GreenShields(double k, double kj, double vf){
+double Cell::GreenShields(double k, double kj, double vf)
+{
   return vf * (1.0 - (k / kj));
 }
 
 // セルに車両を積み込む
-void Cell::PushVehicle(Vehicle* vehicle){
+void Cell::PushVehicle(Vehicle* vehicle)
+{
   load_vehicles.push_back(vehicle);
 }
 
 // 次の行き先セルを設定
-void Cell::PushNextCell(Cell* cell){
+void Cell::PushNextCell(Cell* cell)
+{
   next.push_back(cell);
 }
 
 // 前にいたセルを設定
-void Cell::PushBeforeCell(Cell* cell){
+void Cell::PushBeforeCell(Cell* cell)
+{
   before.push_back(cell);
 }

@@ -78,7 +78,6 @@ void TestSimulator::ReadFile()
   fclose(fp);
   node_num++;
     
-    
   // 車両ファイルの読み込み
   vector<int> odVector(4);
     
@@ -157,12 +156,14 @@ void TestSimulator::MakeCell()
   {
         
     // セルを2単位で分割
-    for(int j = 0; j < 2; j++){
+    for(int j = 0; j < 2; j++)
+    {
             
       Cell* cell = new Cell(cell_num, subsystem_num); // セルの作成
       cells.push_back(cell);
             
-      if(j == 0){ // 上流セルの設定
+      if(j == 0)
+      { // 上流セルの設定
         cells[cell_num]->initCell((double)link[i][2] / 2, (double)link[i][3] / 2, link[i][4]);
 
         Subsystem* sub = new Subsystem(subsystem_num, nodes[link[i][0]], nodes[link[i][1]]); // サブシステムの作成
@@ -201,7 +202,6 @@ void TestSimulator::MakeCell()
       cells[cell_num - j] -> PushNextCell(cells[cell_num - j + 1]);
       cells[cell_num - j + 1] -> PushBeforeCell(cells[cell_num - j]);
     }
-        
     // ノードの更新
     subsystems[i] -> destNode -> UpdateNode(subsystems[i] -> originNode -> number);
   }
@@ -211,7 +211,6 @@ void TestSimulator::MakeCell()
 // セルとサブシステムを接続する
 void TestSimulator::ConnectCell()
 {
-    
   for(int i = 0; i < subsystem_num; i++)
   {
         
@@ -227,7 +226,6 @@ void TestSimulator::ConnectCell()
       // 分流先のリンク
       if((upper_dest == lower_origin) && (upper_origin != lower_dest) && (i != j))
       {
-
         Cell* originCell = subsystems[i] -> secondCell;
         Cell* destCell = subsystems[j] -> firstCell;
                 
@@ -337,7 +335,8 @@ void TestSimulator::Loop(RecordResult result)
       cells[i] -> UpdateDensity();
             
       // 各車両の滞在時間の更新
-      if(cells[i] -> n > 0){
+      if(cells[i] -> n > 0)
+      {
                 
         for(int j = 0; j < cells[i] -> load_vehicles.size(); j++)
         {
@@ -429,7 +428,8 @@ void TestSimulator::Loop(RecordResult result)
     // 終了条件（全ての車両が目的地に着いた場合）
     double rest_vehicle_num = total_OD_num - exit_vehicle_num;
     rest_vehicle_num = pow(rest_vehicle_num, 2);
-    if(rest_vehicle_num <= 0.0000001 || T > 3600){
+    if(rest_vehicle_num <= 0.0000001 || T > 3600)
+    {
       break;
     }
   }
