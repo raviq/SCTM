@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/raviq/SCTM/master/docs/banner.svg" alt="SCTM" width="100%"/>
+
 <h1 align="center">SCTM</h1>
 
 <p align="center">
