@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/raviq/SCTM/master/docs/banner.svg" alt="SCTM" width="90%"/>
+<img src="https://raw.githubusercontent.com/raviq/SCTM/master/docs/banner.svg" alt="SCTM" width="100%"/>
 
 <p align="center">
   <strong>Stochastic Cell Transmission Model for Urban Traffic Simulation</strong><br/>
