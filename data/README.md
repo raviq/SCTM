@@ -1,4 +1,4 @@
-# Data Directory — SCTM Traffic Simulation
+# Data Directory
 
 This directory contains all input data and simulation output for the **Stochastic Cell Transmission Model (SCTM)** — a road traffic simulator for urban networks.
 
